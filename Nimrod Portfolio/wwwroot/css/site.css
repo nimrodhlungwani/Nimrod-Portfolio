@@ -1,0 +1,122 @@
+@keyframes TextBreathing {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.07);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    html {
+    font-size: 18px;
+    }
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    color: white;
+    background-color: #1f1f1f;
+    font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.profile-image {
+    height: 350px;
+    width: 350px;
+    box-shadow: 0 0 40px 10px rgba(255, 0, 0, 0.3);
+}
+
+.social-links a {
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    color: red !important;
+    box-shadow: 0 0 40px 10px rgba(255, 0, 0, 0.3);
+}
+
+.typed-cursor {
+    font-weight: 700;
+    color: rgba(255, 0, 0, 0.);
+    animation: blink 0.7s infinite;
+}
+
+.section-title::before {
+    margin: 0px 15px 10px 0px;
+}
+
+.section-title::after {
+    margin: 0px 0px 10px 15px;
+}
+
+.section-title::before, .section-title::after {  
+    content: "";
+    width: 50px;
+    height: 2px;
+    display: inline-block;
+    background-color: white;
+}
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 48px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 100px;
+    transition: color 0.3s ease;
+}
+
+.scroll-top-wrapper:hover {
+    color: rgba(255, 0, 0, 0.1) !important;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 0.875rem 1.25rem;
+    border-color: color-mix(in srgb, #ffffff, transparent 90%);
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background-color: color-mix(in srgb, #232323 90%, white 5%);
+}

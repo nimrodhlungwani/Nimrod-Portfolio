@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Nimrod Portfolio/obj
+/.vs
+/Nimrod Portfolio/bin/Debug/net8.0

@@ -1,0 +1,61 @@
+﻿<header class="menu-container" id="menu-container">
+    <nav class="navbar navbar-expand-md nav bod border-bottom box-shadow d-none d-md-block container">
+        <div class="container-fluid d-flex flex-wrap justify-content-between">
+
+            <a class="navbar-brand text-black" asp-area="" asp-controller="Home" asp-action="Home">
+                <img src="~/images/Nimrod logo.png" alt="Alternate Text" width="180" />
+            </a>
+
+            <div class="navbar-collapse">
+                <ul class="navbar-nav flex-grow-1 d-flex justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold" asp-area="" asp-controller="Home" asp-action="About"><i class="fa-solid fa-user"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold" asp-area="" asp-controller="Home" asp-action="Resume"><i class="fa-solid fa-file-lines"></i> Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold" asp-area="" asp-controller="Home" asp-action="Skills"><i class="fa-solid fa-chart-bar"></i> Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold" asp-area="" asp-controller="Home" asp-action="Contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="floating-menu d-md-none">
+        <div class="menu-bg"></div>
+        <ul class="main-menu text-danger list-unstyled">
+            <li>
+                <a class="ripple" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+            <li>
+                <a class="ripple" asp-area="" asp-controller="Home" asp-action="About">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a class="ripple" asp-area="" asp-controller="Home" asp-action="Resume">
+                    <i class="fa-solid fa-file-lines"></i>
+                </a>
+            </li>
+            <li>
+                <a class="ripple" asp-area="" asp-controller="Home" asp-action="Skills">
+                    <i class="fa-solid fa-chart-bar"></i>
+                </a>
+            </li>
+            <li>
+                <a class="ripple" asp-area="" asp-controller="Home" asp-action="Contact">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>

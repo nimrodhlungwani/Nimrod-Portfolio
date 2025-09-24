@@ -1,0 +1,206 @@
+﻿@{
+    ViewData["Title"] = "Resume";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="resume" class="resume section py-5">
+
+    <h1 class="text-center fw-bold section-title mb-4 text-danger">Resume</h1>
+
+    <div class="container  d-flex flex-row">
+
+        <div class="row gy-4">
+            <!-- Left column with summary and contact -->
+            <div class="col-lg-4">
+                <div class="resume-side p-4 bg-gradient rounded-3">
+                    <div class="profile-img mb-4 ">
+                        <img src="~/images/profile1.png" alt="Profile" class="img-fluid rounded">
+                    </div>
+
+                    <h3 class="fw-bolder"> <i class="fa-solid fa-list"></i> Summary</h3>
+                    <p>An enthusiastic and detail-oriented technician Intern and developer specializing in multimedia computing. 
+                        Strong problem-solving skills and a creative approach to multimedia projects. 
+                        To obtain a challenging position in a dynamic and motivation environment which will require me to 
+                        utilize my knowledge, practical experience and ability to work well with people, not only allow me to 
+                        grow personally and professionally, but to fairly contribute towards the achievement of the vision and 
+                        mission of any organization.
+                    </p>
+
+                    <h3 class="mt-4 fw-bolder"> <i class="fa-solid fa-address-book"></i> Contact Information</h3>
+                    <ul class="contact-info list-unstyled fs-6">
+                        <li class="d-flex"><i class="fa-solid fa-location-dot pe-4 align-content-center text-muted"></i> Tantabela Street, Soshanguve South Ext 10, Pretoria, 0152</li>
+                        <li class="d-flex"><i class="fa-regular fa-envelope-open pe-4 align-content-center text-muted"></i> <a class="text-nowrap text-white text-decoration-none" href="mailto:hlungwaninimrod@gmail.com"> hlungwaninimrod@gmail.com</a> </li>
+                        <li class="d-flex"><i class="fa-solid fa-phone pe-4 align-content-center text-muted"></i> <a class="text-nowrap text-white text-decoration-none" href="tel:+27606172494">+27 60 617 2494</a></li>
+                        <li class="d-flex"><i class="fa-brands fa-linkedin pe-4 align-content-center text-muted"></i> <a class="text-nowrap text-white text-decoration-none" href="https://www.linkedin.com/in/nimrod-hlungwani-6613a4220/">linkedin.com</a> </li>
+                    </ul>
+
+                    <h3 class="mt-4 fw-bolder"> <i class="fa-solid fa-compass-drafting"></i> Technical Skills</h3>
+                    <div>
+                        <div class="skill-item py-1">
+                            <div class="d-flex justify-content-between fs-6">
+                                <span>Web Development</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress rounded-3" style="height: 8px;">
+                                <div class="bg-danger" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="py-1">
+                            <div class="d-flex justify-content-between fs-6">
+                                <span>UI/UX Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress rounded-3" style="height: 8px;">
+                                <div class="bg-danger" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="py-1">
+                            <div class="d-flex justify-content-between fs-6">
+                                <span>Automation (Blue Prism)</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress rounded-3" style="height: 8px;">
+                                <div class="bg-danger" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="py-1">
+                            <div class="d-flex justify-content-between fs-6">
+                                <span>Java developer</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress rounded-3" style="height: 8px;">
+                                <div class="bg-danger" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="py-1">
+                            <div class="d-flex justify-content-between fs-6">
+                                <span>ASP.NET core MVC</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress rounded-3" style="height: 8px;">
+                                <div class="bg-danger" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column with experience and education -->
+            <div class="col-lg-8 ps-4 ps-lg-5">
+                <!-- Personal Info Section -->
+                <div>
+                    <h3 class="fw-bold"><i class="fa-solid fa-user me-2"></i>Personal Info</h3>
+                    
+                    <div>
+                        <ul class="list-unstyled">
+                            <li>Name: <span class="fw-bold">Nimrode</span></li>
+                            <li>Surname: <span class="fw-bold">Hlungwani</span></li>
+                            <li>Date of Birth: <span class="fw-bold">14 February 2001</span></li>
+                            <li>Gender: <span class="fw-bold">Male</span></li>
+                            <li>Nationality: <span class="fw-bold">South African</span></li>
+                            <li>Marital Status: <span class="fw-bold">Single</span></li>
+                            <li>Ethnicgroup: <span class="fw-bold">Black African</span></li>
+                            <li>Health Status: <span class="fw-bold">Good</span></li>
+                            <li>Criminal Record: <span class="fw-bold">None</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div>
+                    <h3 class="fw-bold"><i class="fa-solid fa-graduation-cap me-2"></i>Education</h3>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bolder p-0 m-0">National Senior Certificate (SA Matric)</h5>
+                        <p class="p-0 m-0">Mahumani High School</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold p-0 m-0">Diplomain Multimedia Computing (ICT)</h5>
+                        <p class="p-0 m-0">Tshwane University of Technology</p>
+                    </div>
+                </div>
+
+                <!-- Certifications Section -->
+                <div>
+                    <h3 class="fw-bold"><i class="fa-solid fa-certificate me-2"></i>Certifications</h3>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold p-0 m-0">Get Connected</h5>
+                        <p class="p-0 m-0">Cisco Networking Academy</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold p-0 m-0">RPA in BluePrism (Automation)</h5>
+                        <p class="p-0 m-0">IntelliScient Technologies</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold p-0 m-0">Introduction to Cybersecurity</h5>
+                        <p class="p-0 m-0">Cisco Networking Academy</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold p-0 m-0">HTML5, CSS, and JavaScript for Web Developers</h5>
+                        <p class="p-0 m-0">Johns Hopkins University</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold p-0 m-0">Artificial Intelligence in the 4IR</h5>
+                        <p class="p-0 m-0">University of Johannesburg</p>
+                    </div>
+
+                </div>
+
+                <!-- Experience  Section -->
+                <div>
+                    <h3 class="fw-bold"> <i class="fa-solid fa-briefcase"></i> Experience</h3>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold p-0 m-0">RPA Developer Intern</h5>
+                        <p class="p-0 m-0">IntelliScient Technologies</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold p-0 m-0">Web Developer Intern</h5>
+                        <p class="p-0 m-0">Global Institute for Capacity Development</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold p-0 m-0">IT Intern (Web Developer)</h5>
+                        <p class="p-0 m-0">CoidLink</p>
+                    </div>
+                </div>
+
+                <!-- Languages Section -->
+                <div>
+                    <h3 class="fw-bold"><i class="fa-solid fa-earth-americas me-2"></i>Languages</h3>
+
+                    <table class="tg table table-bordered text-center align-middle">
+                        <thead class="table-light text-primary">
+                            <tr class="fw-bolder">
+                                <td>English</td>
+                                <td>Xitsonga</td>
+                                <td>Zulu</td>
+                                <td>Sepedi</td>
+                            </tr>
+                            <tr>
+                                <td>Good</td>
+                                <td>Advanced</td>
+                                <td>Good</td>
+                                <td>Good</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>

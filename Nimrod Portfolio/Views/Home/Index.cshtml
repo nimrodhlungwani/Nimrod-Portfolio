@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="home" class="home section d-flex flex-column-reverse flex-md-row align-items-center p-0 py-md-5">
+    <div class="col-lg-6">
+        <div class="hero-text">
+            <h2 class="text-center text-danger fw-bold">Nimrod Hlungwani</h2>
+            <p class="lead">I'm a <span class="typed text-danger fw-bold text-capitalize" data-typed-items="UI/UX designer,full-stack web developer, java developer, robotic process automator"></span></p>
+            <p class="description">
+                An enthusiastic and detail-oriented technician Intern and developer specializing in
+                multimedia computing. Strong problem-solving skills and a creative approach to
+                multimedia projects. To obtain a challenging position in a dynamic and motivation
+                environment which will require me to utilize my knowledge, practical experience and
+                ability to work well with people, not only allow me to grow personally and professionally,
+                but to fairly contribute towards the achievement of the vision and mission of any
+                organization.
+            </p>
+
+            <div class="d-flex justify-content-center gap-3">
+                <a class="btn btn-danger" asp-area="" asp-controller="Home" asp-action="Contact">Get In Touch <i class="fa-solid fa-hand fa-shake"></i></a>
+            </div>
+
+            <div class="social-links d-flex justify-content-center py-3 gap-3">
+                <a href="#"><i class="fa-brands fa-whatsapp fa-xl text-muted"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-xl text-muted"></i></a>
+                <a href="#"><i class="fa-brands fa-github fa-xl text-muted"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin fa-xl text-muted"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6  profile-container d-flex justify-content-center align-items-center">
+        <img src="~/images/profile1.png" alt="profile-image" class="profile-image rounded-circle" style="">
+    </div>
+
+    <div class="d-md-none pb-5 pt-2">
+        <img src="~/images/Nimrod logo.png" alt="Logo image" width="180" />
+    </div>
+</section>
