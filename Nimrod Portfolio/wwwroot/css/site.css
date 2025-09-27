@@ -1,17 +1,3 @@
-@keyframes TextBreathing {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.07);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
 @keyframes blink {
     0%, 50% {
         opacity: 1;
@@ -48,19 +34,18 @@ body {
     font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+main[role="main"] {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+main[role="main"].fade-out {
+    opacity: 0;
+}
+
 .profile-image {
     height: 350px;
     width: 350px;
-    box-shadow: 0 0 40px 10px rgba(255, 0, 0, 0.3);
-}
-
-.social-links a {
-    padding: 8px;
-    border-radius: 50%;
-}
-
-.social-links a:hover {
-    color: red !important;
     box-shadow: 0 0 40px 10px rgba(255, 0, 0, 0.3);
 }
 
@@ -115,8 +100,8 @@ body {
 
 #contact-form input, #contact-form textarea {
     padding: 0.875rem 1.25rem;
-    border-color: color-mix(in srgb, #ffffff, transparent 90%);
+    border-color: rgba(255, 255, 255, 0.1);
     border-radius: 0.5rem;
     color: #ffffff;
-    background-color: color-mix(in srgb, #232323 90%, white 5%);
+    background-color: rgba(35, 35, 35, 0.9);
 }

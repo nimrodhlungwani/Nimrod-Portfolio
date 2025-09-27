@@ -53,30 +53,54 @@
 
                     <h3 class="text-center mb-4 fw-bolder">Get In Touch</h3>
 
-                    <form action="" method="post" class="contact-form row gy-4" id="contact-form" aria-label="Contact form" data-status="init" novalidate>
+                    <form asp-action="Contact" method="post" class="contact-form row gy-4" id="contact-form" aria-label="Contact form" data-status="init" novalidate>
+                        
+                        @using Nimrod_Portfolio.Models
+                        @model Mail
+
+                        @section Scripts {
+                            @{
+                                await Html.RenderPartialAsync("_ValidationScriptsPartial");
+                            }
+                        }
+
                         <div class="col-md-6">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" maxlength="100">
+                            <span asp-validation-for="Name" class="text-danger"></span>
                         </div>
 
                         <div class="col-md-6 ">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email" required="">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" maxlength="100">
+                            <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
 
                         <div class="col-12">
-                            <input type="text" class="form-control" name="contact" placeholder="Contact" required="">
+                            <input type="text" class="form-control" name="contact" placeholder="Contact" maxlength="100">
+                            <span asp-validation-for="Contact" class="text-danger"></span>
                         </div>
 
                         <div class="col-12">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message" maxlength="512"></textarea>
                         </div>
 
-                        <div class="col-12">
-                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                        </div>
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div class="text-danger text-center fw-bold">
+                                One or more fields have an error. Please check and try again.
+                            </div>
+                        }
+
+                        @if (TempData["ShowSuccess"] != null)
+                        {
+                            <div class="text-info text-center fw-bold">
+                                Your message has been sent successfully!!!
+                            </div>
+                        }
 
                         <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-danger fw-bolder">Send Message</button>
+                            <button type="submit" class="btn btn-danger fw-bolder">Send Message</button>
                         </div>
+
                     </form>
                 </div>
             </div>

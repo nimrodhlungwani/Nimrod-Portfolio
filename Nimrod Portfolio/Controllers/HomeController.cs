@@ -6,12 +6,12 @@ namespace Nimrod_Portfolio.Controllers
 {
     public class HomeController : Controller
     {
-        //private readonly IEmailService _EmailService;
+        private readonly IEmailService _EmailService;
 
-        //public HomeController(IEmailService emailService)
-        //{
-        //    _EmailService = emailService;
-        //}
+        public HomeController(IEmailService emailService)
+        {
+            _EmailService = emailService;
+        }
 
         public IActionResult Index()
         {
@@ -45,9 +45,9 @@ namespace Nimrod_Portfolio.Controllers
                 return View(model);
             }
 
-            //_EmailService.SendEmail(model);
-
+            _EmailService.SendEmail(model);
             TempData["ShowSuccess"] = true;
+
             return RedirectToAction("Contact");
         }
 

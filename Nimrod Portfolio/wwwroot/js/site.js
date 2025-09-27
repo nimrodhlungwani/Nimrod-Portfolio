@@ -68,6 +68,20 @@ $(function () {
 
         $(window).on("scroll", handleScroll);
 
+        /*========Smooth Page Transition ===================*/
+        $('a.nav-link, a.ripple').on('click', function (e) {
+            const href = $(this).attr('href');
+            if (href && href !== '#' && !href.startsWith('http') && !$(this).attr('target')) {
+                e.preventDefault();
+                $('main[role="main"]').addClass('fade-out');
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 400);
+            }
+        });
+
+        $('main[role="main"]').removeClass('fade-out');
+
     } catch (e) {
         console.error("Smooth scroll error:", e);
     }
